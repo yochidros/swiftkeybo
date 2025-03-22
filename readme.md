@@ -11,11 +11,11 @@ Raspberry pi pico keyboard
     mkdir keyboard && cd keyboard
     git clone https://github.com/yochidros/swiftkeybo.git swiftkeybo
     git clone https://github.com/qmk/qmk_firmware.git --depth 1 --recurse-submodules --shallow-submodules -b 0.22.14 qmk
-    cd qmk
-    ln -s ../swiftkeybo keyboards/swiftkeybo
-    cd keyboards/swiftkeybo
+    cd qmk/keyboards
+    ln -s ../../swiftkeybo swiftkeybo
+    cd swiftkeybo
     make
-    cd ../..
+    cd ../.. (qmk root directory)
     make SKIP_GIT=yes swiftkeybo:default
 
 Flashing example for this keyboard:
