@@ -6,5 +6,6 @@ OPT_DEFS += -DNO_ACTION_LAYER
 CFLAGS += -Wno-builtin-declaration-mismatch
 CFLAGS += -Wno-unused-value
 
-SRC += keyboards/swiftkeybo/swift_keyboard.o
-SRC += keyboards/swiftkeybo/swift/support.c
+SRC += keyboards/swiftkeybo/support/support.c
+
+USER_NAME := yochidros
