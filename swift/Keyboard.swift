@@ -16,6 +16,5 @@ public func process_record_user(keycode: UInt16, record: UnsafePointer<keyrecord
         }
         return false
     }
-    // Swiftでキー処理するやつ
     return true
 }
